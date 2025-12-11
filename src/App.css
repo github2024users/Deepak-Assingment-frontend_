@@ -1,0 +1,78 @@
+/* Global styles */
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+body, html, #root { height: 100%; margin: 0; padding: 0; }
+
+/* Layout container */
+.app { min-height: 100vh; display: flex; flex-direction: column; background: #f9f9f9; }
+
+/* Header UI */
+.header {
+  background: linear-gradient(135deg, #0d6efd 0%, #0066cc 100%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.header h1 { margin: 0; font-size: 28px; font-weight: bold; }
+
+/* Main content wrapper */
+.main {
+  flex: 1;
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 16px;
+  background: #f0f0f0;
+  border-top: 1px solid #ddd;
+  color: #666;
+}
+
+/* Login card appearance */
+.login-card {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  background: white;
+}
+.login-card h2 { color: #0d6efd; margin-top: 0; }
+
+/* General button styles */
+.button {
+  background:#0d6efd;
+  color:white;
+  border:none;
+  padding:11px 16px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:14px;
+  font-weight:500;
+}
+.button.secondary { background:#6c757d; }
+.button:disabled { opacity:0.6; cursor:not-allowed; }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .main { padding: 12px; }
+  .header { padding: 12px; }
+  .header h1 { font-size: 20px; }
+}
+
+@media (max-width: 1024px) {
+  .main { max-width: 100%; padding: 16px; }
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #888; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
